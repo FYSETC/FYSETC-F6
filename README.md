@@ -116,10 +116,8 @@ If you use the TMC2130, you should use the SPI mode. FYSETC has a version specif
 
 ![](images/F6V1.3-PIN.svg)
 
-## Operation Guide
-
----
-
+## Firmware Guide
+The firmware is in the ```Firmware``` folder.
 #### Step1: USB Driver
 
 F6 used a cheap but stable chip for USB to seriel ，CH340，The Driver is here：[https://github.com/FYSETC/CH340-Driver](https://github.com/FYSETC/CH340-Driver)
