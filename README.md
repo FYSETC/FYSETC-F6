@@ -1,14 +1,12 @@
 ## Product Introduction
 
----
+
 
 ![F6V1.3](images/F6V1.3.jpg)
 
 The FYSETC F6 board is a feature rich all-in-one electronics solution for 3D printer and other CNC devices.  It provides six drivers slots and supports Pololu pin compatible stepper drivers, especially the TMC drivers modules. There is no need for flying wires when using TMC2100, TMC2130 and TMC2208. and SPI,Usart and ther pin configer functions are available.
 
 ## Features
-
----
 
 - Compact size: 117mm x 87mm
 - fully integrated all in one solution:
@@ -35,15 +33,11 @@ The FYSETC F6 board is a feature rich all-in-one electronics solution for 3D pri
 
 ## Application
 
----
-
 - 3D printer 
 - CNC Device
 - Other similar machines
 
 ## Hardware Reasources
-
----
 
 ![F6V1.3-board](images/F6V1.3-board.png)
 
@@ -69,8 +63,6 @@ The FYSETC F6 board is a feature rich all-in-one electronics solution for 3D pri
 | Output               | BED OUT：15A Max ；Heater Out：5A Max            |
 
 ## Jumper for different drivers
-
----
 
 In order to support as many different drivers as possible, F6 sets a lot of jumper positions. Different drive modules require different jumpers. The following is a detailed description:
 
@@ -111,8 +103,6 @@ If you want to config more , you need to enable PDN. First, You must make the ju
 If you use the TMC2130, you should use the SPI mode. FYSETC has a version specifically for F6. The jumper settings on the motherboard are as shown above, and the shaded green part is not used. If you want to use the sensorless endstop function of the 2130, you also need to connect the jumper next to the limit switch socket. The corresponding position of each switch is: X- = X, X+ = E2, Y- = Y, Y+ = E1, Z- = Z, Z+ = E0, then configure the firmware, you can use all the features of the 2130.
 
 ## Pin Definition
-
----
 
 ![](images/F6V1.3-PIN.svg)
 
@@ -205,20 +195,14 @@ Replace the file  `C:\Users\*username*\.platformio\packages\framework-arduino-av
 
 ## Attachments
 
----
-
 - [Schematic files](https://github.com/FYSETC/F6/blob/master/F6_V13.pdf)
 - [PCB files](https://github.com/FYSETC/F6/blob/master/GERBER_F6_13.zip)
 
 ## Shop
 
----
-
 - [FYSETC-F6V1.3](https://www.aliexpress.com/item/FYSETC-F6-Board-ALL-in-one-Electronics-Solution-For-3D-Printer-CNC-Devices-Up-to-6/32911155606.html)
 - [TMC2100/2130/2208](https://www.aliexpress.com/store/product/5PCS-TMC2100-V1-3-TMC2130-TMC2208-Stepper-Motor-StepStick-Mute-Driver-Silent-Excellent-Stability-Protection-For/3480083_32848553467.html)
 
 ## Tech Support
-
----
 
 Please submit any technical issue into our [forum](http://forum.fysetc.com/) 
