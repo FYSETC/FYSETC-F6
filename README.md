@@ -47,24 +47,24 @@ The FYSETC F6 board is a feature rich all-in-one electronics solution for 3D pri
 
 ![F6V1.3-board](images/F6V1.3-board.png)
 
-| Board Name           | F6                                               |
-| -------------------- | ------------------------------------------------ |
-| License              | GPL V2.0                                         |
-| Latest Version       | V1.3                                             |
-| Extruders            | 3                                                |
-| Fixed Fans           | 5 Max                                            |
-| Controlled Fans      | 3 Max                                            |
-| Heaters              | 3 Max                                            |
-| Endstops             | 6 Max                                            |
-| Temp sens            | 4 Max                                            |
-| SPI                  | 1                                                |
-| I2C                  | 1                                                |
-| ISP                  | 1                                                |
-| Serial port chip     | CH340                                            |
-| CPU                  | Atmega2560                                       |
-| CPU Speed ( MHz )    | 16 Mhz                                           |
-| Stepper driver       | 6 Max                                            |
-| Stepper driver  Type | All StepStick compatible modules                 |
+| Board Name           | F6                                            |
+| -------------------- | --------------------------------------------- |
+| License              | GPL V2.0                                      |
+| Latest Version       | V1.3                                          |
+| Extruders            | 3                                             |
+| Fixed Fans           | 5 Max                                         |
+| Controlled Fans      | 3 Max                                         |
+| Heaters              | 3 Max                                         |
+| Endstops             | 6 Max                                         |
+| Temp sens            | 4 Max                                         |
+| SPI                  | 1                                             |
+| I2C                  | 1                                             |
+| ISP                  | 1                                             |
+| Serial port chip     | CH340                                         |
+| CPU                  | Atmega2560                                    |
+| CPU Speed ( MHz )    | 16 Mhz                                        |
+| Stepper driver       | 6 Max                                         |
+| Stepper driver  Type | All StepStick compatible modules              |
 | Input                | Main PWR：12-24V 10A Max；BED IN：12-24V 15A Max |
 | Output               | BED OUT：15A Max ；Heater Out：5A Max            |
 
@@ -78,12 +78,12 @@ In order to support as many different drivers as possible, F6 sets a lot of jump
 
 As shown in the schematic diagram above, there are three sets of jumpers in the drive section: JP1, JP6, and JP8. The different driver correspondences are shown in the following table:
 
-|         Divers Class         |            Used jumpers             |
-| :--------------------------: | :---------------------------------: |
-| A4988/DRV8825/THB6128/LV8729 |        JP6（only ABC ways）         |
-|           TMC2100            |         JP6（only AB ways）         |
-|           TMC2208            |       JP1（Short 2&3）&  JP6        |
-|           TMC2130            | JP1（Short 1&2）&  JP8（Short All） |
+| Divers Class                 | Used jumpers                    |
+|:----------------------------:|:-------------------------------:|
+| A4988/DRV8825/THB6128/LV8729 | JP6（only ABC ways）              |
+| TMC2100                      | JP6（only AB ways）               |
+| TMC2208                      | JP1（Short 2&3）&  JP6            |
+| TMC2130                      | JP1（Short 1&2）&  JP8（Short All） |
 
 #### 1- A4988 and similar series
 
@@ -117,12 +117,14 @@ If you use the TMC2130, you should use the SPI mode. FYSETC has a version specif
 ![](images/F6V1.3-PIN.svg)
 
 ## Firmware Guide
+
 The firmware is in the ```Firmware``` folder.
+
 #### Step1: USB Driver
 
 F6 used a cheap but stable chip for USB to seriel ，CH340，The Driver is here：[https://github.com/FYSETC/CH340-Driver](https://github.com/FYSETC/CH340-Driver)
 
-#### Step2: FYSETC Arduino Plugin 
+#### Step2: FYSETC Arduino Plugin
 
 * Instead of manually installing the FYSETC addon's you can now install them from the Arduino Board Manager. From the Arduino File menu select Preferences. 
 
@@ -152,9 +154,9 @@ If you want to use F6 V1.4 , you need to update the addon to 1.4.0
 #### Step3: Configure firmware
 
 * Change the board type configuration in configuration.h 
-
+  
   F6 V1.3: BOARD_FYSETC_F6_13
-
+  
   F6 V1.4: BOARD_FYSETC_F6_14
 
 ![F6V1.3-GUI9](images/F6V1.3-GUI9.png)
@@ -195,6 +197,12 @@ Click the arrow button to upload.
 
 ![F6V1.4-GUI7](images/F6V1.4-GUI7.png)
 
+## Platformio
+
+How to build `F6 v1.4`
+
+Replace the file  `C:\Users\*username*\.platformio\packages\framework-arduino-avr\variants\fysetcf6\pins_arduino.h` with the one in the repository.
+
 ## Attachments
 
 ---
@@ -214,4 +222,3 @@ Click the arrow button to upload.
 ---
 
 Please submit any technical issue into our [forum](http://forum.fysetc.com/) 
-
